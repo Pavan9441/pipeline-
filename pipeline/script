@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone repo') {
+            steps {
+                git 'https://github.com/Pavan9441/maven-web-app.git'
+            }
+        }
+    }
+}
+

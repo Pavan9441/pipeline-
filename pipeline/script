@@ -7,6 +7,10 @@ pipeline {
                 git 'https://github.com/Pavan9441/maven-web-app.git'
             }
         }
+        stage('Maven Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
     }
 }
-
